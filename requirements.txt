@@ -1,0 +1,25 @@
+einshape>=1.0.0
+utilsforecast>=0.1.10
+huggingface_hub[cli]>=0.23.0
+typer>=0.12.3
+wandb>=0.17.5
+absl-py>=1.4.0
+seaborn
+scipy
+matplotlib
+notebook
+ipython
+ipykernel
+click
+timesfm[torch]
+
+# --- JAX with CUDA 12.1+ (cuDNN 9.1) for Python 3.11---
+# Note speicifically for Linux!
+jax==0.4.29
+jaxlib @ https://storage.googleapis.com/jax-releases/cuda12/jaxlib-0.4.29+cuda12.cudnn91-cp311-cp311-manylinux2014_x86_64.whl
+
+# PyTorch with CUDA 12 (official pip wheels)
+--extra-index-url https://download.pytorch.org/whl/cu121
+torch
+torchvision
+torchaudio
